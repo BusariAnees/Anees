@@ -1,0 +1,212 @@
+body {
+  background: #000000;
+  color: #fff;
+  font-family: "Inter", Arial, sans-serif;
+  margin: 0;
+  min-height: 100vh;
+  padding: 110px 0 0 90px;
+}
+
+.container {
+  max-width: 700px;
+  padding: 0 24px;
+}
+
+.profile-pic img {
+  height: 8rem;
+  border-radius: 10px;
+  object-fit: cover;
+}
+h1 {
+  font-family: "Inter", "Inter Placeholder", sans-serif;
+  font-size: 28px;
+  font-weight: 500;
+  font-style: normal;
+  letter-spacing: -0.5px;
+  line-height: 41px;
+  margin-bottom: 0.1em;
+  color: #fff; /* Or use: var(--framer-text-color, #fff); */
+  text-align: left;
+  text-decoration: none;
+  text-transform: none;
+  /* Optional: OpenType features if supported */
+  font-variation-settings: "wght" 700;
+}
+
+.subtitle {
+  color: #b3b3b3;
+  font-size: 1rem;
+  margin-bottom: 1.3em;
+}
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  margin-bottom: 2em;
+}
+.btn {
+  height: 32px;
+  width: 6rem;
+  background: #fff;
+  color: #181818;
+  border: none;
+  border-radius: 10px;
+  padding: 0.6em 0.5em;
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.btn:hover {
+  background: #eaeaea;
+}
+.status {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  color: white;
+  font-size: 0.9rem;
+}
+/* ...existing code... */
+.dot-wrapper {
+  position: relative;
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  margin-right: 4px;
+  vertical-align: middle;
+}
+.dot {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 10px;
+  height: 10px;
+  background: #0bed5a;
+  border-radius: 50%;
+  display: inline-block;
+  z-index: 2;
+}
+.dot-pulse {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 14px;
+  height: 14px;
+  background: rgba(12, 241, 92, 0.5);
+  border-radius: 50%;
+  z-index: 1;
+  animation: dot-explode 1.2s infinite; /* faster */
+}
+
+@keyframes dot-explode {
+  0% {
+    opacity: 0.7;
+    transform: scale(1);
+  }
+  30% {
+    opacity: 0.3;
+    transform: scale(2.2); /* explode quickly */
+  }
+  100% {
+    opacity: 0;
+    transform: scale(2.2);
+  }
+}
+/* ...existing code... */
+.ventures {
+  margin-top: 2em;
+  margin-bottom: 1.2em;
+}
+.ventures-title {
+  color: #888;
+  font-size: 0.9rem;
+  font-weight: 300;
+  margin-bottom: 3px;
+}
+.venture-list {
+  display: flex;
+  gap: 2em;
+  flex-wrap: wrap;
+}
+.venture {
+  border-radius: 10px;
+  padding: 1.2em 1em;
+  text-decoration: none;
+  color: inherit;
+  transition: background 0.2s, box-shadow 0.2s;
+  cursor: pointer;
+  min-width: 220px;
+  flex: 1 1 220px;
+  display: flex;
+  align-items: flex-start;
+  gap: 1em;
+}
+.venture:hover {
+  background: #232323;
+  box-shadow: 0 4px 24px 0 rgba(0, 0, 0, 0.1);
+}
+
+.venture img {
+  border-radius: 8px;
+  object-fit: cover;
+  background: #fff;
+  width: 55px;
+  height: 55px;
+}
+.venture-content {
+  flex: 1;
+}
+.venture-title {
+  margin-bottom: 0.2em;
+  font-weight: 400;
+}
+.venture-desc {
+  color: #b3b3b3;
+  font-size: 0.9em;
+}
+.links {
+  margin-top: 2.5em;
+  display: flex;
+  gap: 1em;
+}
+.link-btn {
+  background: #232323;
+  color: #b3b3b3;
+  border: none;
+  border-radius: 6px;
+  padding: 0.5em 1.2em;
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: background 0.2s;
+  text-decoration: none;
+  width: 3.5rem;
+}
+.link-btn:hover {
+  background: #333;
+}
+.imprint {
+  color: #555;
+  font-size: 0.95em;
+  margin-top: 4em;
+}
+@media (max-width: 700px) {
+  .venture-list {
+    flex-direction: column;
+    gap: 1em;
+  }
+  .container {
+    margin-top: 30px;
+  }
+}
+
+.explore-btn {
+  background: none;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  cursor: pointer;
+  text-decoration: underline;
+  display: inline-block;
+}
