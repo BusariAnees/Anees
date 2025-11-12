@@ -111,3 +111,11 @@ a:hover {
 footer {
   height: 24px;
 }
+
+
+ /* Responsiveness */
+  @media (max-width: 520px){
+.stage {
+  height: 15rem;
+}
+  }

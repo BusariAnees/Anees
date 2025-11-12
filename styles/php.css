@@ -84,6 +84,7 @@
     letter-spacing: .2px;
     margin: 0 0 6px;
     font-size: clamp(1rem, 1.1rem + .3vw, 1.35rem);
+    color: black;
   }
 .card a {
     color: white;
@@ -129,3 +130,27 @@
     mix-blend-mode: normal;
   }
   .card--light .card-body .card-desc{ color:#60646b; }
+
+   /* Responsiveness */
+  @media (max-width: 520px){
+.card-media {
+      width: 10.5rem;
+}
+.grid {
+      gap: 20px 6px;
+}
+
+.backend-des{
+  display: block !important;
+}
+
+.badge {
+  display: inline-block;
+  margin: 0.5rem 0;
+}
+
+ :root{
+  --bg: white
+ }
+
+  }

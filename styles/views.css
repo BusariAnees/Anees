@@ -121,7 +121,7 @@
         max-width: 320px;
       }
       .portfolio-item-title {
-        color: white;
+        color: black;
         font-weight: 600;
         margin: 1em 0 0.5em 0;
         font-size: 12px;
@@ -136,9 +136,10 @@
         margin-bottom: 1em;
       }
 .next-project-link {
+  margin-bottom: 1rem;
   display: inline-block;
   font-family: "Raleway", Arial, sans-serif;
-  font-size: 1rem;
+     font-size: 0.9rem;
   color: gray;
   background: #232323;
   padding: 0.7em 2em;
