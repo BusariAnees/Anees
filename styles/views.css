@@ -261,6 +261,10 @@
 
   /* Responsiveness */
   @media (max-width: 520px){
+body{
+padding: 1rem;
+}
+
     .nav-btn{ padding:9px 12px; font-size:.95rem; }
     .top-nav{ gap:8px; }
       @media (max-width: 900px) {
