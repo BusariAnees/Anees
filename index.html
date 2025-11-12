@@ -4,17 +4,29 @@
     <meta charset="UTF-8">
     <title>Anees Busari</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon -->
+
+        <link rel="icon" type="image/svg+xml" href="/favicon.ico">
+    <link rel="alternate icon" href="image/favicon.ico">
    <link rel="stylesheet" href="styles/style.css">
    <link rel="stylesheet" href="../styles/views.css">
    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 </head>
 <style>
             .hide-on-mobile { display: inline-block; }
             @media (max-width: 600px) {
                 .hide-on-mobile { display: none !important; }
             }
+               /* Page fade-in */
+       body { opacity: 0; transform: translateY(10px); transition: opacity .10s ease, transform .6s ease; }
+       body.loaded { opacity: 1; transform: none; }
+
+       .hide-on-mobile { display: inline-block; }
+       @media (max-width: 600px) {
+           .hide-on-mobile { display: none !important; }
+       }
         </style>
 
 <body>
@@ -122,5 +134,11 @@
         </div>
         <div class="imprint">Anees©</div>
     </div>
+    <script>
+      // trigger fade-in when DOM is ready
+      window.addEventListener('DOMContentLoaded', () => {
+        document.body.classList.add('loaded');
+      });
+    </script>
 </body>
 </html>
