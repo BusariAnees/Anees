@@ -47,8 +47,8 @@ h1 {
 .btn {
   height: 32px;
   width: 6rem;
-  background: #fff;
-  color: #181818;
+  background: black;
+  color: white;
   border: none;
   border-radius: 10px;
   padding: 0.6em 0.5em;
@@ -141,9 +141,10 @@ h1 {
   display: flex;
   align-items: flex-start;
   gap: 1em;
+  background: #181818;
 }
 .venture:hover {
-  background: #232323;
+  background: #2f2e2e;
   box-shadow: 0 4px 24px 0 rgba(0, 0, 0, 0.1);
 }
 
