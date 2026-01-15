@@ -22,7 +22,7 @@
   padding: 40px 28px 64px;
   overflow: hidden;
   border-radius: 6px;
-  height: 30rem;
+  height: 80rem;
 }
 
 .stage img {
@@ -116,6 +116,6 @@ footer {
  /* Responsiveness */
   @media (max-width: 520px){
 .stage {
-  height: 15rem;
+  height: 35rem;
 }
   }
