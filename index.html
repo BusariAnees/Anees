@@ -368,23 +368,25 @@ const quoteDisplay = document.getElementById('testimonial-quote');
 const tagsDisplay = document.getElementById('testimonial-tags');
 
 function updateContent(row) {
-  // Remove active class from everyone
-  rows.forEach(r => r.classList.remove('active'));
+  if (row.classList.contains('active')) return; // Optimization: do nothing if already active
   
-  // Set current row as active
+  rows.forEach(r => r.classList.remove('active'));
   row.classList.add('active');
   
-  // Update the Text
   quoteDisplay.textContent = row.getAttribute('data-quote');
   tagsDisplay.textContent = row.getAttribute('data-tags');
 }
 
 rows.forEach(row => {
-  // Option 1: Update on Hover
-  row.addEventListener('mouseenter', () => updateContent(row));
+  // Only trigger hover on devices that actually have a mouse (pointer: fine)
+  row.addEventListener('mouseenter', () => {
+    if (window.matchMedia("(pointer: fine)").matches) {
+      updateContent(row);
+    }
+  });
   
-  // Option 2: Update on Click (keep it active after mouse leaves)
- 
+  // Click works for both mobile touch and desktop mouse
+  row.addEventListener('click', () => updateContent(row));
 });
 
 

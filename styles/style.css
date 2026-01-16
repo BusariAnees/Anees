@@ -749,3 +749,20 @@ display: inline-block;
 
 
 }
+
+
+/* Only apply hover effects if the device supports actual hovering */
+@media (hover: hover) {
+  .list-row:hover {
+    background-color: #000;
+    color: #fff;
+    transform: scale(1.02);
+  }
+}
+
+/* Keep the .active class separate so it works on both Mobile and Desktop */
+.list-row.active {
+  background-color: #000;
+  color: #fff;
+  transform: scale(1.02);
+}
