@@ -23,7 +23,8 @@
         margin-top: 60px;
       }
       .portfolio-title {
-        color: white;
+        margin-top: 6rem;
+        color: black;
         font-size: 30px;
         line-height: 30px;
         font-family: auto;
@@ -262,6 +263,24 @@
   p.lead{
     margin:.6rem 0 0; color:var(--muted);
     max-width:62ch;
+  }
+
+
+  .port{
+        display: flex;
+    align-items: center;
+    justify-content: center;
+        margin-block: 6px;
+  }
+
+  .span-link{
+        margin-left: 10px;
+    color: black;
+    font-size: 0.8rem;
+    border: 1px solid gray;
+    border-radius: 15px;
+    padding: 6px;     
+    background: linear-gradient(135deg, rgba(79, 70, 229, .9), rgba(124, 58, 237, .92));
   }
 
   /* Responsiveness */
